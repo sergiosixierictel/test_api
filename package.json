@@ -1,0 +1,23 @@
+{
+  "name": "sms_sender",
+  "version": "1.0.0",
+  "description": "Api Rest con sockets para enviar sms masivamente",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sergiosixi-erictel@bitbucket.org/sergiosixi-erictel/sms_sender_rest.git"
+  },
+  "author": "Sergio Sixi - Erictel",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/sergiosixi-erictel/sms_sender_rest#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "method-override": "^2.3.10",
+    "socket.io": "^2.0.4"
+  }
+}

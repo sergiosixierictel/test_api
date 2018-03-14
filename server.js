@@ -1,5 +1,5 @@
 const express = require('express');
-const port = process.env.port || 9000;
+const port = process.env.PORT || 9000;
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const cors = require('cors');
@@ -10,6 +10,7 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use(methodOverride())
+app.set('port',(process.env.PORT || 9000));
 
 
 let api = express.Router();
@@ -26,6 +27,6 @@ api.route('/form').post((req,res)=>{
 app.use('/api',api);
 
 
-app.listen(port, ()=>{
+app.listen(app.get('port'), ()=>{
     console.log(`Express Server Listening in ${port}`)
 })

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,6 +15,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/sergiosixi-erictel/sms_sender_rest#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",

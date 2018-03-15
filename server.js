@@ -68,5 +68,5 @@ app.use('/api',api)
 
 //Iniciamos el servidor
 app.listen(config.port, ()=>{
-    console.log(`Express Server Listening in ${port}`)
+    console.log(`Express Server Listening in ${config.port}`)
 })

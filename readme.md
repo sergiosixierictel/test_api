@@ -85,7 +85,7 @@ api.route('/data').post((req,res)=>{
 ```
 
 La Url de este servicio quedaría así
-https://<dominio o ip>:<puerto>/api/data
+https://dominio o ip:puerto/api/data
 
 
 
